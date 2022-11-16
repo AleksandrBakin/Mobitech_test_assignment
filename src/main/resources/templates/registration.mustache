@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    <meta charset="utf-8">
   <title> Registration Page </title>
 </head>
 <body>
@@ -11,8 +12,15 @@ New user
     {{/message}}
 </div>
 <form action="/registration" method="post">
-  <div><label> User Name : <input type="text" name="username"/> </label></div>
-  <div><label> Password: <input type="password" name="password"/> </label></div>
+    <div><label> Email : <input type="text" name="email"/> </label></div>
+    <div><label> Password: <input type="password" name="password"/> </label></div>
+    <div><label> Name : <input type="text" name="name"/>  </label></div>
+    <div><label> Ege : <input type="number" name="age"/> </label></div>
+    <div><label> Gender:
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <input type="radio" name="gender" value="Other"> Other <Br>
+    </label></div>
     <input type="hidden" name="_csrf" value="{{_csrf.token}}"/>
   <div><input type="submit" value="Sign Up"/></div>
 </form>

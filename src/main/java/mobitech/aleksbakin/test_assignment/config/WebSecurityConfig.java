@@ -25,6 +25,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                     .formLogin()
                     .loginPage("/login")
+                    .usernameParameter("email")
                     .permitAll()
                 .and()
                     .logout()
@@ -36,9 +37,12 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         auth.jdbcAuthentication()
                 .dataSource(dataSource)
                 .passwordEncoder(NoOpPasswordEncoder.getInstance())
-                .usersByUsernameQuery("select username, password, active from usr where username=?")
-                //.authoritiesByUsernameQuery("select u.username ur.roles from usr u inner join user_role ur on u.id = ur.user_id where u.username=?");
-                .authoritiesByUsernameQuery("select u.username, ur.roles from usr as u inner join user_role as ur on u.id = ur.user_id where u.username=?");
+                //.usersByUsernameQuery("select username, password, active from usr where username=?")
+                .usersByUsernameQuery("select email, password, active from usr where email=?")
+                //.usersByUsernameQuery("select username, password from usr where username=?")
+
+                //.authoritiesByUsernameQuery("select u.username, ur.roles from usr as u inner join user_role as ur on u.id = ur.user_id where u.username=?");
+                .authoritiesByUsernameQuery("select u.email, ur.roles from usr as u inner join user_role as ur on u.id = ur.user_id where u.email=?");
     }
 //    @Bean
 //    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
