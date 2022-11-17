@@ -12,9 +12,9 @@ public class User {
 
     private String email;
 
-    private String name;  // add
-    private Integer age;  // add
-    private String gender; // add
+    private String name;
+    private Integer age;
+    private String gender;
     private String password;
     private boolean active;
 

@@ -58,6 +58,7 @@ public class RegistrationController {
         user.setRoles(Collections.singleton(Role.USER));
         userRepo.save(user);
 
-        return "redirect:/main";
+        //return "redirect:/main";
+        return "redirect:/main?name="+user.getName();
     }
 }

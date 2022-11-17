@@ -5,13 +5,16 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     </head>
     <body>
-    Welcome to main page
         <div>
             <form  action="/logout" method="post">
                 <input type="submit" value="Sign Out"/>
                 <input type="hidden" name="_csrf" value="{{_csrf.token}}"/>
             </form>
         </div>
+        <div>
+            Welcome to main page {{name}}
+        </div>
+        <a href="/users"> Users </a>
         <div>
             <form method="post">
                 <input type="text" name="text" placeholder="Enter message" />
