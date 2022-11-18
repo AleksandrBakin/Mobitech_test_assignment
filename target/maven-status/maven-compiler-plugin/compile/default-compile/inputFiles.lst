@@ -1,0 +1,10 @@
+/Users/aleksandrbakin/Dev/Java/JavaProjects/test_assignment/src/main/java/mobitech/aleksbakin/test_assignment/config/MvcConfig.java
+/Users/aleksandrbakin/Dev/Java/JavaProjects/test_assignment/src/main/java/mobitech/aleksbakin/test_assignment/TestAssignmentApplication.java
+/Users/aleksandrbakin/Dev/Java/JavaProjects/test_assignment/src/main/java/mobitech/aleksbakin/test_assignment/config/WebSecurityConfig.java
+/Users/aleksandrbakin/Dev/Java/JavaProjects/test_assignment/src/main/java/mobitech/aleksbakin/test_assignment/repos/UserRepo.java
+/Users/aleksandrbakin/Dev/Java/JavaProjects/test_assignment/src/main/java/mobitech/aleksbakin/test_assignment/domain/User.java
+/Users/aleksandrbakin/Dev/Java/JavaProjects/test_assignment/src/main/java/mobitech/aleksbakin/test_assignment/domain/Role.java
+/Users/aleksandrbakin/Dev/Java/JavaProjects/test_assignment/src/main/java/mobitech/aleksbakin/test_assignment/controller/RegistrationController.java
+/Users/aleksandrbakin/Dev/Java/JavaProjects/test_assignment/src/main/java/mobitech/aleksbakin/test_assignment/domain/Message.java
+/Users/aleksandrbakin/Dev/Java/JavaProjects/test_assignment/src/main/java/mobitech/aleksbakin/test_assignment/repos/MessageRepo.java
+/Users/aleksandrbakin/Dev/Java/JavaProjects/test_assignment/src/main/java/mobitech/aleksbakin/test_assignment/controller/MainController.java

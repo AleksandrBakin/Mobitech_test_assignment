@@ -1,0 +1,10 @@
+mobitech/aleksbakin/test_assignment/config/WebSecurityConfig.class
+mobitech/aleksbakin/test_assignment/config/MvcConfig.class
+mobitech/aleksbakin/test_assignment/domain/Role.class
+mobitech/aleksbakin/test_assignment/controller/RegistrationController.class
+mobitech/aleksbakin/test_assignment/repos/UserRepo.class
+mobitech/aleksbakin/test_assignment/domain/Message.class
+mobitech/aleksbakin/test_assignment/TestAssignmentApplication.class
+mobitech/aleksbakin/test_assignment/domain/User.class
+mobitech/aleksbakin/test_assignment/repos/MessageRepo.class
+mobitech/aleksbakin/test_assignment/controller/MainController.class
