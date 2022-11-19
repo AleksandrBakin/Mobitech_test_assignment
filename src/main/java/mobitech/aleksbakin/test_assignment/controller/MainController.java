@@ -34,6 +34,8 @@ public class MainController {
     
     @PostMapping("/main")
     public String add(@RequestParam String text, @RequestParam String tag, Map<String, Object> model) {
+        model.put("name", "");
+
         Message message = new Message(text,tag);
 
         messageRepo.save(message);
@@ -45,6 +47,8 @@ public class MainController {
     }
     @PostMapping("filter")
     public String filter(@RequestParam String filter, Map<String, Object> model) {
+        model.put("name", "");
+
         Iterable<Message> messages;
         if(filter != null && filter.isEmpty()) {
             messages = messageRepo.findAll();
